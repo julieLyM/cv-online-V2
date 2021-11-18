@@ -1,0 +1,27 @@
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <a href="{{ path('index') }}" class="logo"><img src="assets/img/favicon.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="{{ path('index') }}">Accueil</a></li>
+          <li><a href="{{ path('about') }}">A Propos</a></li>
+          <li><a href="{{ path('resume') }}">Parcours</a></li>
+          <li><a href="{{ path('portfolio') }}">Portfolio</a></li>
+          {# <li><a href="{{ path('contact') }}">Contact</a></li> #}
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links">
+        <a href="https://github.com/julieLyM"  target="_blank" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/julie-ly-minh-324212171/"  target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="{{ asset('assets/img/cv.pdf') }}" target="_blank" class="cv">CV</i></a>
+        <a href="mailto:julielyminh@gmail.com"  target="_blank" class="mail"><i class="bi bi-envelope"></i></a>
+
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->

@@ -1,0 +1,213 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello portfolio page !{% endblock %}
+
+{% block body %}  
+
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Vous trouverez dans cet espace tous les projets auxquels j'ai pu travailler.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Tous</li>
+              <li data-filter=".filter-symfony">Symfony</li>
+              <li data-filter=".filter-react">React</li>
+              <li data-filter=".filter-divers">Divers</li>
+              <li data-filter=".filter-web">En entreprise</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-symfony">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/jadebeauty.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Boutique Jade Beauty</h4>
+                <p>Symfony</p>
+                <div class="portfolio-links">
+                  {# <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a> #}
+                  <a href="http://julielym.com/" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-react">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/marvel.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Marvel API</h4>
+                <p>React</p>
+                <div class="portfolio-links">
+                  {# <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> #}
+                  <a href="https://marvel-reacthooks.netlify.app/" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-react">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/movieDB.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Film actuel movieDB</h4>
+                <p>React</p>
+                <div class="portfolio-links">
+                  {# <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a> #}
+                  <a href="https://themovie-database-app.herokuapp.com/" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-react">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/studio.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Studio Ghibli</h4>
+                <p>React ( en refonte )</p>
+                <div class="portfolio-links">
+                  {# <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a> #}
+                  <a href="https://ghibli-film.netlify.app/" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-divers">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Screenshot.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Calculatrice simple</h4>
+                <p>Javascript / Jquery</p>
+                <div class="portfolio-links">
+                  {# <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a> #}
+                  <a href="https://pedantic-morse-ebed8a.netlify.app/" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {# <div class="col-lg-4 col-md-6 portfolio-item filter-react">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/weather.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Météo</h4>
+                <p>React</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> #}
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-symfony">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/lepetitviet.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Restaurant Le Petit Vietnamien</h4>
+                <p>Symfony</p>
+                <div class="portfolio-links">
+                  {# <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a> #}
+                  <a href="http://www.lepetitviet.julielym.com/" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {# <div class="col-lg-4 col-md-6 portfolio-item filter-react">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/HP.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Harry Potter</h4>
+                <p>React</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/HP.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> #}
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/web.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Harpes Camac</h4>
+                <p>Symfony</p>
+                <div class="portfolio-links">
+                  <a href="https://location.camac-harps.com/"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/web.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Select Paddles</h4>
+                <p>Wordpress</p>
+                <div class="portfolio-links">
+                  <a href="https://select-paddles.com/"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/web.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Association Guerande Atlantique</h4>
+                <p>Wordpress</p>
+                <div class="portfolio-links">
+                  <a href="https://www.guerandeatlantique.fr/"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/web.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Mairie Saint Molf</h4>
+                <p>SPIP</p>
+                <div class="portfolio-links">
+                  <a href="https://www.mairie-saint-molf.fr//"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/web.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Presqu'ile investissement</h4>
+                <p>Wordpress</p>
+                <div class="portfolio-links">
+                  <a href="https://www.presquile-investissement.com/"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+              <div id="preloader"></div> 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> 
+{% endblock %}
